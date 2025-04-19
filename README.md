@@ -100,6 +100,10 @@ pytest tests/
 └── requirements.txt    # Project dependencies
 ```
 
+## UI
+
+![UI](image.png)
+
 ## License
 
 MIT

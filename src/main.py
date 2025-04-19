@@ -34,8 +34,16 @@ from langchain.prompts import PromptTemplate
 st.set_page_config(
     page_title="PDF Question Answering",
     page_icon="📚",
-    layout="wide"
 )
+# Tech Stack Information
+st.sidebar.subheader("Tech Stack")
+st.sidebar.markdown("""
+- **Frontend**: [Streamlit](https://streamlit.io/)
+- **Backend**: [LangChain](https://www.langchain.com/) with [Ollama LLM](https://ollama.ai/)
+- **Database**: [ChromaDB](https://www.trychroma.com/) for vector storage
+- **Embeddings**: Ollama Embeddings
+- **PDF Parsing**: Custom utility using PyPDF or similar
+""")
 
 # Helper function to format context for the LLM
 def format_context(docs):
